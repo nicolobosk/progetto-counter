@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: #f5f5f5;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Tema chiaro applicato con classe sul body */
+body.light-theme {
+    background: #f4f4f4;
+    color: #222;
+}
+
+.counter-container {
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 12px;
+    background: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.light-theme .counter-container {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.counter-title {
+    margin: 0 0 15px;
+    font-size: 1.6rem;
+}
+
+.counter-display {
+    font-size: 3.5rem;
+    margin: 15px 0 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    display: inline-block;
+    min-width: 100px;
+    user-select: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+body.light-theme .counter-display {
+    border-color: #ddd;
+    background: #fafafa;
+}
+
+.counter-hint {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+body.light-theme .counter-hint {
+    color: #777;
+}
+
+.counter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.counter-btn {
+    font-size: 2rem;
+    padding: 8px 22px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: #f5f5f5;
+    transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.counter-btn:hover {
+    background: #555;
+    transform: translateY(-2px);
+}
+
+.counter-btn:active {
+    transform: translateY(1px);
+}
+
+body.light-theme .counter-btn {
+    background: #eee;
+    color: #222;
+}
+
+body.light-theme .counter-btn:hover {
+    background: #ddd;
+}
+
+/* Pulsante per il cambio tema */
+.theme-toggle {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #555;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-1px);
+}
+
+.theme-toggle:active {
+    transform: translateY(1px);
+}
+
+body.light-theme .theme-toggle {
+    border-color: #ccc;
+    background: rgba(0, 0, 0, 0.02);
+}
