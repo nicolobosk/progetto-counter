@@ -8,10 +8,11 @@ e l'utente può scegliere tra tema chiaro e tema scuro.
 
 ---
 
-##  Demo online
+## Demo online
 
-👉 Prova l'applicazione qui:  
-https://github.com/nicolobosk/progetto-counter.git
+👉 **Prova l'applicazione qui:**  
+https://nicolobosk.github.io/progetto-counter/
+
 
 
 
