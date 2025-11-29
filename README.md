@@ -21,8 +21,8 @@ https://nicolobosk.github.io/progetto-counter/
  
  - Visualizzazione iniziale del counter a 0
  - Pulsanti + e - per:
-     .incrementare il valore
-     .decrementare il valore
+     incrementare il valore,
+     decrementare il valore
  - Doppio click sul valore per reset a 0
  - Salvataggio automatico del valore in localStorage
  - Tema chiaro/scuro con scelta salvata in localStorage
